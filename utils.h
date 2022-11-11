@@ -14,7 +14,7 @@
 using namespace std;
 
 const int MIN_DIM = 100;
-const int MAX_DIM = 2000;
+const int MAX_DIM = 1000;
 const int STEP = 100;
 
 typedef void (*mul_fun)(const float *, const float *, float *, int);

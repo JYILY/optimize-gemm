@@ -7,6 +7,7 @@
 
 #include <thread>
 
+
 #define index(i, j) ((j)*dim+(i))
 
 void row_loop(const float *A, const float *B, float *C, int dim) {
@@ -441,4 +442,7 @@ void thread1(const float *A, const float *B, float *C, int dim) {
     th4.join();
 }
 
+void cuda(const float *A, const float *B, float *C, int dim){
+
+}
 #endif //MMO_MULTIPLICATION_H

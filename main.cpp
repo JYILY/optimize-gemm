@@ -7,7 +7,7 @@
 
 using namespace std;
 
-const int TEST_TIMES = 1;
+const int TEST_TIMES = 10;
 const int CHECK_DIM = 100;
 
 
@@ -100,8 +100,22 @@ void test_thread() {
     test(thread1, TEST_TIMES, "thread1");
 }
 
+void test_all() {
+    test(row_loop, TEST_TIMES, "row_loop");
+    test(col_loop, TEST_TIMES, "col_loop");
+    test(cache_11, TEST_TIMES, "cache_11");
+    test(cache_12, TEST_TIMES, "cache_12");
+    test(cache_21, TEST_TIMES, "cache_21");
+    test(cache_22, TEST_TIMES, "cache_22");
+    test(cache_31, TEST_TIMES, "cache_31");
+    test(cache_32, TEST_TIMES, "cache_32");
+    test(cache_33, TEST_TIMES, "cache_33");
+    test(cache_41, TEST_TIMES, "cache_41");
+    test(simd, TEST_TIMES, "simd");
+    test(thread1, TEST_TIMES, "thread1");
+}
 
 int main() {
-    test_thread();
+    test_all();
     return 0;
 }

@@ -6,7 +6,7 @@ from palettable.tableau import TableauMedium_10
 
 
 all_file_list = ['col_loop','row_loop','cache_11','cache_12','cache_21','cache_22','cache_31','cache_32','cache_33','cache_41','simd','thread1']
-test_set = [6]
+test_set = [0,1,2,3,4,5,6]
 test_list = [[0,1],[1,2,3],[1,2,3,4,5],[1,2,3,4,5,6,7,8],[1,3,5,7,9],[1,3,5,7,9,10],[1,3,5,7,9,10,11]]
 top_list = [0.3,0.5,0.5,0.7,1.0,4.0,6]
 test_name_list = ['row_col','cache1','cache2','cache3','cache4','simd','thread1']
